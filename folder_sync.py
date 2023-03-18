@@ -28,8 +28,7 @@ import sys
 import hashlib
 import time
 
-# The FileHandler() is used to setup the output file  for loggers other than the root logger.
-# streamHandler() is used to output the in screen console
+
 if not os.path.exists('log.txt'):
     open('log.txt', 'w').close()
 logging.basicConfig(
