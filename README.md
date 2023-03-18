@@ -22,10 +22,17 @@ The script uses the following functions:
 3. Open the command prompt or terminal and navigate to the directory containing the `folder_sync.py` script.
 4. Run the following command to start the synchronization tool:
 ```
-python folder_sync.py
+$ python folder_sync.py
 ```
 5. The script will prompt you to enter the source folder path, replica folder path, synchronization interval in seconds, and log file path (The prompt for log file must be path/"log.txt"). Enter the requested information.
 7. The script will run indefinitely, synchronizing the source and replica folders at the specified interval and logging the results to the specified log file.
+### Exemple
+```bash
+Enter the source folder path: source
+Enter the replica folder path: replica
+Enter the synchronization interval in seconds: 10
+Enter the log file path: log.txt
+```
 
 ## Dependencies
 
