@@ -24,7 +24,7 @@ The script uses the following functions:
 ```bash
 python folder_sync.py
 ```
-5. The script will prompt you to enter the source folder path, replica folder path, synchronization interval in seconds, and log file path **(The prompt for log file must be path/"log.txt")**. Enter the requested information.
+5. The script will prompt you to enter the source folder path, replica folder path, synchronization interval in seconds, and log file path **(The prompt for log file must be `log.txt`)**. Enter the requested information.
 7. The script will run indefinitely, synchronizing the source and replica folders at the specified interval and logging the results to the specified log file.
 ### Promp Example
 ```
