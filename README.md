@@ -1,38 +1,39 @@
 # Test-task
 
 README
-This script provides a folder synchronization tool that periodically copies files from a source folder to a replica folder, while keeping their contents identical. It works recursively through subdirectories.
+# Folder Synchronization Tool
 
-Functions
+This script provides a tool for synchronizing the contents of a source folder to a replica folder. The tool works recursively through subdirectories, copying, updating or deleting files as necessary to ensure the contents of both folders remain identical.
+
 The script uses the following functions:
 
-copy_file: to copy files from the source to the replica folder.
-update_file: to update files in the replica folder with new content from the source folder.
-delete_file: to delete files from the replica folder that do not exist in the source folder.
-create_folder: to create folders in the replica folder that do not exist in the source folder.
-delete_folder: to delete folders from the replica folder that do not exist in the source folder.
-files: to synchronize files in a folder.
-folders: to synchronize files and folders recursively in a directory.
-Usage
-To use this script, run it with the following command:
+* `copy_file`: to copy files from the source to the replica folder.
+* `update_file`: to update files in the replica folder with new content from the source folder.
+* `delete_file`: to delete files from the replica folder that do not exist in the source folder.
+* `create_folder`: to create folders in the replica folder that do not exist in the source folder.
+* `delete_folder`: to delete folders from the replica folder that do not exist in the source folder.
+* `files`: to synchronize files in a folder.
+* `folders`: to synchronize files and folders recursively in a directory.
 
-Copy code
+## How to use the script
+
+1. Make sure Python is installed on your computer.
+2. Download the `folder_sync.py` script.
+3. Open the command prompt or terminal and navigate to the directory containing the `folder_sync.py` script.
+4. Run the following command to start the synchronization tool:
+```
 python folder_sync.py
-The script will then prompt you to enter the source folder path, replica folder path, synchronization interval in seconds, and log file path.
+```
+5. The script will prompt you to enter the source folder path, replica folder path, synchronization interval in seconds, and log file path (The prompt for log file must be path/"log.txt"). Enter the requested information.
+7. The script will run indefinitely, synchronizing the source and replica folders at the specified interval and logging the results to the specified log file.
 
-The script will then run indefinitely, synchronizing the source and replica folders at the specified interval and logging the results to the specified log file.
+## Dependencies
 
-Logging
-The logging module is used to log the status of the synchronization operations. Two logging handlers are used:
+This script requires the following Python packages to be installed:
 
-FileHandler: saves the log output to a file named "log.txt".
-StreamHandler: outputs the log messages to the console.
-Dependencies
-This script has the following dependencies:
-
-shutil
-logging
-os
-sys
-hashlib
-time
+* shutil
+* logging
+* os
+* sys
+* hashlib
+* time
